@@ -5,11 +5,11 @@ import java.util.Arrays;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-//@SpringBootApplication
+@SpringBootApplication
 public class StudentEntrollmentApplication {
 
 	public static void main(String[] args) {
-		//SpringApplication.run(StudentEntrollmentApplication.class, args);
+		SpringApplication.run(StudentEntrollmentApplication.class, args);
 		
 		System.out.println("Student Enrollment Application Started...");
 		
