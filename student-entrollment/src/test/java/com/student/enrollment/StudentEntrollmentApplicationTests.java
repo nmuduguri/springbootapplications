@@ -1,6 +1,6 @@
 package com.student.enrollment;
 
-//@SpringBootTest
+// @SpringBootTest
 class StudentEntrollmentApplicationTests {
 
 	// @Test
