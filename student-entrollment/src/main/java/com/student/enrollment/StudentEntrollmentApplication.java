@@ -15,7 +15,6 @@ public class StudentEntrollmentApplication {
 		
 		String[] company = txt.split(" ");
 		for(String com : company) {
-			
 			if(com.contains("a") ||com.contains("e") || com.contains("i") || com.contains("o") || com.contains("u")) {
 				System.out.println("vowels letters contians in this company : " +com);
 			}
