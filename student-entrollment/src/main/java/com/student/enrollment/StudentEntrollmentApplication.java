@@ -10,10 +10,7 @@ public class StudentEntrollmentApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(StudentEntrollmentApplication.class, args);
-		
 		System.out.println("Student Enrollment Application Started...");
-		
-		
 		String txt = "wipro cts infosys accenture hcl microsoft";
 		
 		String[] company = txt.split(" ");
