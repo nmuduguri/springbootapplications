@@ -8,6 +8,9 @@ public class StudentRegApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(StudentRegApplication.class, args);
+		
+		
+		System.out.println("This is my Student Registration Applciation..");
 	}
 
 }
