@@ -11,6 +11,8 @@ public class StudentRegApplication {
 		
 		
 		System.out.println("This is my Student Registration Applciation..");
+		
+		System.out.println("We are in hyderabad..");
 	}
 
 }
