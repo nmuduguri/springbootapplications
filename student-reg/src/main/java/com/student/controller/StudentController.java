@@ -8,6 +8,7 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -27,17 +28,38 @@ public class StudentController {
 	@Autowired
 	private StudentServcie studentService;
 	
-	@Value("${server.port}")
-	String myport;
+	int sid = 101;
 	
 	
 	@GetMapping("/register") // /register
 	public String register() {
-		
-		
-		System.out.println("myport is :"+myport);
-
 		return "registration";  //registration.jsp
+	}
+	
+	@PostMapping("/registration") // /register
+	public String registration(String name1, String name2, String b, String m, String e, ModelMap mMap) {
+		
+		
+		
+		Student student = new Student();
+		
+		
+		student.setSid(sid);
+		student.setFristName(name1);
+		student.setLastName(name2);
+		student.setBranch(b);
+		student.setMobile(m);
+		student.setEmail(e);
+		
+		mMap.put("studentname", name1);
+		
+		
+		sid++;
+		
+		studentService.save(student);
+		
+		
+		return "success";  //success.jsp
 	}
 	
 	

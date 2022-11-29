@@ -29,9 +29,8 @@ public class Student {
 		super();
 	}
 
-	public Student(int id, int sid, String fristName, String lastName, String branch, String mobile, String email) {
+	public Student(int sid, String fristName, String lastName, String branch, String mobile, String email) {
 		super();
-		this.id = id;
 		this.sid = sid;
 		this.fristName = fristName;
 		this.lastName = lastName;
@@ -98,7 +97,7 @@ public class Student {
 
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", sid=" + sid + ", fristName=" + fristName + ", lastName=" + lastName
+		return "Student [sid=" + sid + ", fristName=" + fristName + ", lastName=" + lastName
 				+ ", branch=" + branch + ", mobile=" + mobile + ", email=" + email + "]";
 	}
 

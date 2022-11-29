@@ -9,27 +9,27 @@
 
 <body>
 
-<form>
+<form style="text-align: center" method="post" action="/registration">
 
     <div class="container">
 
         <label> Enter First Name :</label>
-        <input type="text" name="firstName"><br/>
+        <input type="text" name="name1"><br/><br/>
 
         <label> Enter Last Name :</label>
-        <input type="text" name="lastName"><br/>
+        <input type="text" name="name2"><br/><br/>
 
         <label> Enter Branch :</label>
-        <input type="text" name="branch"><br/>
+        <input type="text" name="b"><br/><br/>
 
         <label> Enter Mobile Number :</label>
-        <input type="text" name="mobile"><br/>
+        <input type="text" name="m"><br/><br/>
 
         <label> Enter Email :</label>
-        <input type="text" name="email"><br/>
+        <input type="text" name="e"><br/><br/>
 
 
-        <button type ="submit">Register</button>
+        <button type ="submit" style="background-color: burlywood ;">Registration</button>
 
 
 
