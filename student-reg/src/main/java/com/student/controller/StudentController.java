@@ -37,22 +37,14 @@ public class StudentController {
 	}
 	
 	@PostMapping("/registration") // /register
-	public String registration(String name1, String name2, String b, String m, String e, ModelMap mMap) {
+	public String registration(String fname, String lname, String trainNo, String source, String distination, String amount,String mobile,String email) {
 		
 		
 		
 		Student student = new Student();
 		
 		
-		student.setSid(sid);
-		student.setFristName(name1);
-		student.setLastName(name2);
-		student.setBranch(b);
-		student.setMobile(m);
-		student.setEmail(e);
-		
-		mMap.put("studentname", name1);
-		
+	
 		
 		sid++;
 		
